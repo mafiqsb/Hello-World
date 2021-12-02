@@ -1,0 +1,283 @@
+.box{
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  text-align: center;
+  margin: auto;
+  font-family: "century-gothic", sans-serif;
+  background: url(../images/bg.jpg) no-repeat center center/cover;
+  height: 100%;
+  position: relative;
+}
+
+.box::after {
+  content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.box-container {
+  width: 100%;
+  padding: 40px;
+  z-index: 2;
+  position: relative;
+}
+
+.box-img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.box h1 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.box h5 {
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-weight: 100;
+  margin: 18px;
+  color: var(--light-color);
+}
+
+.box p {
+  text-align: center;
+  padding: 40px;
+  border-radius: 1%;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Tabs */
+
+.tabs {
+  background: var(--dark-color);
+  padding-top: 1rem;
+	border-bottom: 3px solid #3d3d3d;
+  border-right: none;
+}
+
+.tabs .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  grid-gap: 1rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.tabs p {
+	font-size: 1.2rem;
+	padding-top: 0.5rem;
+  color: var(--light-color);
+}
+
+.tabs .container > div {
+  padding: 1.5rem 0;
+  color: var(--primary-color);
+}
+
+.tabs .container > div:hover {
+	color: var(--light-color);
+	cursor: pointer;
+}
+
+.tab-border {
+  border-bottom: solid 4px var(--primary-color);
+}
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+	display: none;
+	opacity: 0;
+}
+
+.show {
+	display: block !important;
+	opacity: 1 !important;
+	transition: all 1000 ease-in;
+}
+
+#tab-1-content .tab-1-content-inner {
+
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url(../images/YouRock.jpg) no-repeat center center/cover;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+}
+
+#tab-3-content .bg {
+  background: url(../images/bg-3.jpg) no-repeat center center/cover;
+  width: 100%;
+  padding: 5rem;
+}
+
+
+/* logo */
+
+#tab-2-content .header-logo {
+	background: url(../images/DSC_2049.jpg) no-repeat center center/cover;
+	width: 100%;
+	height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 70px;
+
+}
+
+#tab-3-content .tab-container1 {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+  position: relative;
+}
+
+.tab-container {
+  padding-top: 15%;
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+  position: relative;
+}
+
+
+
+
+.tab-1-content-inner::after {
+  content: '';
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	z-index: 1;
+  	background: rgba(0, 0, 0, 0.6);
+  	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+
+.img-1 {
+  width: 10rem;
+}
+
+/* text */
+
+.text-lg {
+  font-size: 40px;
+  font-weight: bolder;
+  color: 	var(--light-color);
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.text-center {
+  align-items: center;
+  width: 70%;
+}
+
+.text-header {
+  font-size: 30px;
+  font-weight: bolder;
+  color: 	var(--light-color);
+  padding-top: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+
+
+
+.tab-content-item p {
+  width: 70%;
+}
+
+.code {
+  background: var(--dark-color);
+  padding: 40px;
+}
+.code_header1 {
+  color: var(--primary-color);
+  font-size: 30px;
+}
+
+/* html */
+.html {
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.html-container {
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin: 20px;
+}
+/* css */
+
+.css {
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.css-container {
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin: 20px;
+}
+
+/* javascript */
+
+.js  {
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.js-container {
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin: 20px;
+}
+
+@media (max-width: 960px) {
+
+  .tab-container {
+    padding-top: 30%;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
